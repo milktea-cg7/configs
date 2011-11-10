@@ -18,7 +18,7 @@ set list
 set listchars=tab:\ \ ,trail:\ ,eol:↲,extends:»,precedes:«,nbsp:%
 
 "ESC押したらIMEをOFFにする
-inoremap <silent> <ESC> <ESC>:set iminsert=0<CR>
+inoremap <ESC> <ESC>:set iminsert=0<CR>
 
 "#######################
 " プログラミングヘルプ系
