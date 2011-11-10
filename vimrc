@@ -19,6 +19,10 @@ set listchars=tab:\ \ ,trail:\ ,eol:↲,extends:»,precedes:«,nbsp:%
 
 "ESC押したらIMEをOFFにする
 inoremap <ESC> <ESC>:set iminsert=0<CR>
+"カーソルキーで行末／行頭の移動可能に設定
+set whichwrap=b,s,[,],<,>
+"バックスペースでインデントや改行を削除できるようにする
+set backspace=indent,eol,start
 
 "#######################
 " プログラミングヘルプ系
