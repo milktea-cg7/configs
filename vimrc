@@ -13,12 +13,19 @@ set laststatus=2 "ステータスラインを常に表示
 set cursorline "カーソル行強調表示
 set nowrap "横スクロール
 
+"Tab表示
+set list
+set listchars=tab:\ \ ,trail:\ ,eol:↲,extends:»,precedes:«,nbsp:%
+
+"ESC押したらIMEをOFFにする
+inoremap <silent> <ESC> <ESC>:set iminsert=0<CR>
+
 "#######################
 " プログラミングヘルプ系
 "#######################
 syntax on "カラー表示
 set smartindent "オートインデント
-set expandtab "タブの代わりに空白文字挿入
+"set expandtab "タブの代わりに空白文字挿入
 set ts=4 sw=4 sts=0 "タブは半角4文字分のスペース
 
 " ファイルを開いた際に、前回終了時の行で起動
