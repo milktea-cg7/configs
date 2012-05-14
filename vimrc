@@ -24,6 +24,16 @@ set whichwrap=b,s,[,],<,>
 "バックスペースでインデントや改行を削除できるようにする
 set backspace=indent,eol,start
 
+"挿入モードで範囲選択（セレクトモード）
+set selectmode=key
+set keymodel=startsel,stopsel
+snoremap <C-S-Up> <S-Up><S-Up><S-Up><S-Up><S-Up>
+snoremap <C-S-Down> <S-Down><S-Down><S-Down><S-Down><S-Down>
+
+" オートインデントしない
+filetype plugin on
+filetype indent off
+
 "#######################
 " プログラミングヘルプ系
 "#######################
