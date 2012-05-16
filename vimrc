@@ -34,6 +34,9 @@ snoremap <C-S-Down> <S-Down><S-Down><S-Down><S-Down><S-Down>
 filetype plugin on
 filetype indent off
 
+" バックアップファイルを保存しない
+set nobackup
+
 "#######################
 " プログラミングヘルプ系
 "#######################
